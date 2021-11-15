@@ -1,0 +1,79 @@
+$table: 500px;
+$desktop: 900px;
+
+@mixin table {
+  @media (min-width: #{$table}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+body {
+  width: 100%;
+  background-color: #f1f2f3;
+  .bg {
+    margin: 1em;
+    @include table {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    @include desktop {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .product {
+      display: block;
+      padding: 1em;
+      margin-bottom: 1em;
+      border-radius: 5%;
+      box-shadow: 1px 10px 10px 1px #c5c5c5;
+      background-color: white;
+      @include table {
+        width: 90%;
+        margin: auto;
+      }
+      .logo-wrapper {
+        height: 6em;
+        .logo {
+          display: block;
+          margin: auto;
+          height: 80%;
+        }
+      }
+
+      .CircularProgressbar {
+        z-index: 2;
+        width: 100%;
+
+        vertical-align: middle;
+        .CircularProgressbar-path {
+          z-index: 2;
+          stroke: #3e98c7;
+          stroke-linecap: round;
+          -webkit-transition: stroke-dashoffset 0.5s ease 0s;
+          transition: stroke-dashoffset 0.5s ease 0s;
+        }
+        .CircularProgressbar-trail {
+          z-index: 2;
+          stroke: #d6d6d6;
+          stroke-linecap: round;
+        }
+        .CircularProgressbar-text {
+          z-index: 2;
+          fill: #3e98c7;
+          font-size: 20px;
+          dominant-baseline: middle;
+          text-anchor: middle;
+        }
+        .CircularProgressbar-background {
+          z-index: 2;
+          fill: #d6d6d6;
+        }
+      }
+    }
+  }
+}

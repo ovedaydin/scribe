@@ -1,0 +1,36 @@
+{
+  "users": {
+    "user1234": [
+      {
+        "name": "Spotify",
+        "length": 7,
+        "remaining": 4,
+        "logo": "https://dl.airtable.com/.attachments/370735a7ed7db05e1a224091973ea280/204c6b64/Spotify_Logo.png",
+        "url": "https://www.spotify.com"
+      },
+      {
+        "name": "Amazon Music",
+        "length": 14,
+        "remaining": 1,
+        "logo": "https://dl.airtable.com/.attachments/08339aeb6917f40fddc16647b809fb4e/242d73de/Amazon_Music.jpg",
+        "url": "https://music.amazon.com"
+      }
+    ],
+    "user5678": [
+      {
+        "name": "myfitnesspal",
+        "length": 14,
+        "remaining": 10,
+        "logo": "https://dl.airtable.com/.attachments/300246b16beaa8ee8d2ca5637eeb21db/e9dbea9e/MyFitnessPal.png",
+        "url": "https://www.myfitnesspal.com"
+      },
+      {
+        "name": "Blubrry",
+        "length": 7,
+        "remaining": 3,
+        "logo": "https://dl.airtable.com/.attachments/764442f3c73eca5ad0271f9c1e80526b/66f4fe6b/BlubrryLogo.png",
+        "url": "https://blubrry.com"
+      }
+    ]
+  }
+}
