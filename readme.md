@@ -2,3 +2,7 @@
 ```
 python app.py
 ```
+### Client
+```
+npm run dev
+```
